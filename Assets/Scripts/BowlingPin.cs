@@ -18,7 +18,7 @@ public class BowlingPin : MonoBehaviour
     {
         try
         {
-            if(pin.up.y < threshold)
+            if(pin.up.y < threshold && gameObject.GetComponent<Collider>().enabled == true)
             {
                 scoreBoard.AddScore(point);
                 gameObject.GetComponent<Collider>().enabled = false;
@@ -30,7 +30,7 @@ public class BowlingPin : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider collider)
+    void Update()
     {
         CheckIfFell();
     }
