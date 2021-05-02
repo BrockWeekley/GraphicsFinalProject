@@ -14,7 +14,11 @@ public class BowlingPin : MonoBehaviour
 
     void Awake()
     {
-        scoreBoard = GameObject.FindGameObjectWithTag("ScoreBoard").GetComponent<Score>();
+        scoreBoard = GameObject.FindGameObjectWithTag("ScoreBoard").GetComponent<Score>();      
+    }
+
+    void Start()
+    {
         startPosition = pin.position;
         startRotation = pin.rotation;
     }
@@ -37,9 +41,13 @@ public class BowlingPin : MonoBehaviour
 
     public void ResetPin()
     {
-        pin.position = startPosition;
-        pin.rotation = startRotation;
-        gameObject.GetComponent<Collider>().enabled = true;
+        if (pin.up.y < threshold && gameObject.GetComponent<Collider>().enabled == false)
+        {
+            pin.position = startPosition;
+            pin.rotation = startRotation;
+            gameObject.GetComponent<Collider>().enabled = true;
+        }
+        
     }
 
     void Update()
