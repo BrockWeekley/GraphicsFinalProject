@@ -14,6 +14,13 @@ public class Score : MonoBehaviour
         UpdateScoreBoard();
     }
 
+    public void ClearScore()
+    {
+        score = 0;
+        UpdateScoreBoard();
+    }
+
+
     void Start()
     {
         score = 0;

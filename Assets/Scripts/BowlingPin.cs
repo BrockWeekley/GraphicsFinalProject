@@ -9,9 +9,14 @@ public class BowlingPin : MonoBehaviour
     public int point = 1;
     public Score scoreBoard;
 
+    Vector3 startPosition;
+    Quaternion startRotation;
+
     void Awake()
     {
         scoreBoard = GameObject.FindGameObjectWithTag("ScoreBoard").GetComponent<Score>();
+        startPosition = pin.position;
+        startRotation = pin.rotation;
     }
 
     void CheckIfFell()
@@ -28,6 +33,13 @@ public class BowlingPin : MonoBehaviour
         {
             Debug.Log("Pin in the out of bounds zone");
         }
+    }
+
+    public void ResetPin()
+    {
+        pin.position = startPosition;
+        pin.rotation = startRotation;
+        gameObject.GetComponent<Collider>().enabled = true;
     }
 
     void Update()
