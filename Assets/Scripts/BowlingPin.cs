@@ -5,7 +5,7 @@ using UnityEngine;
 public class BowlingPin : MonoBehaviour
 {
     public Transform pin;
-    public float threshold = .6f;
+    public float threshold = .9f;
     public int point = 1;
     public Score scoreBoard;
 
@@ -41,13 +41,9 @@ public class BowlingPin : MonoBehaviour
 
     public void ResetPin()
     {
-        if (pin.up.y < threshold && gameObject.GetComponent<Collider>().enabled == false)
-        {
-            pin.position = startPosition;
-            pin.rotation = startRotation;
-            gameObject.GetComponent<Collider>().enabled = true;
-        }
-        
+        pin.position = startPosition;
+        pin.rotation = startRotation;
+        gameObject.GetComponent<Collider>().enabled = true;
     }
 
     void Update()

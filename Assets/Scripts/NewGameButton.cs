@@ -71,16 +71,22 @@ public class NewGameButton : MonoBehaviour
         totalBoard.AddTotal(scoreBoard.score);
         scoreBoard.ClearScore();
 
-        //reest each pin
-        foreach(GameObject pin in pins)
-        {
-            currentPin = pin.GetComponent<BowlingPin>();
-            //currentPin.ResetPin();
-        }
-
         //reset bowlingball position
+        var ballBody = bowlingBall.GetComponent<Rigidbody>();
+        ballBody.velocity = Vector3.zero;
+        ballBody.angularVelocity = Vector3.zero;
         bowlingBall.transform.position = ballStartPosition;
         bowlingBall.transform.rotation = ballStartRotation;
+
+        //reset each pin
+        foreach (GameObject pin in pins)
+        {
+            var pinBody = pin.GetComponent<Rigidbody>();
+            pinBody.velocity = Vector3.zero;
+            pinBody.angularVelocity = Vector3.zero;
+            currentPin = pin.transform.GetChild(0).gameObject.GetComponent<BowlingPin>();
+            currentPin.ResetPin();
+        }
 
         //increment frame
         frameBoard.AddFrame();

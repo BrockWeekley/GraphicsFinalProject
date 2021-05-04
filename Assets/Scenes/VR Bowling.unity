@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2647,6 +2647,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (6)
@@ -2827,6 +2831,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (7)
@@ -4486,6 +4494,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (2)
@@ -4552,6 +4564,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (9)
@@ -5401,6 +5417,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (8)
@@ -6349,6 +6369,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (3)
@@ -8105,6 +8129,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (1)
@@ -10467,7 +10495,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.13, y: 0.13, z: 0.13}
+  m_Size: {x: 0.25, y: 0.25, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1328616453
 MonoBehaviour:
@@ -14813,6 +14841,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (5)
@@ -15702,6 +15734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin (4)
@@ -16057,6 +16093,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 370181137}
     m_Modifications:
+    - target: {fileID: 3151796757732803149, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
+      propertyPath: scoreBoard
+      value: 
+      objectReference: {fileID: 1101913355}
     - target: {fileID: 3445745114284166058, guid: d3e0a05a5eef9ba469d65aac51f0fd4b, type: 3}
       propertyPath: m_Name
       value: Bowling Pin
